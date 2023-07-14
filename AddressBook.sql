@@ -49,3 +49,5 @@ SELECT * FROM address_book
 
 SELECT city, COUNT(*) FROM address_book GROUP BY city /* by group by count city */ 
 SELECT state, COUNT(*) as count FROM address_book GROUP BY state /* by group by count state or by as we give name to column */ 
+
+SELECT * FROM address_book WHERE city = 'Bhilai' ORDER BY first_name ASC /* with order by sort person name for given city */
