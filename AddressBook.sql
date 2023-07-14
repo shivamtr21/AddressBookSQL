@@ -51,3 +51,11 @@ SELECT city, COUNT(*) FROM address_book GROUP BY city /* by group by count city 
 SELECT state, COUNT(*) as count FROM address_book GROUP BY state /* by group by count state or by as we give name to column */ 
 
 SELECT * FROM address_book WHERE city = 'Bhilai' ORDER BY first_name ASC /* with order by sort person name for given city */
+
+
+ALTER TABLE address_book ADD name VARCHAR(50),type VARCHAR(50) 
+
+UPDATE address_book SET name='Family Address Book', type = 'Family' WHERE id = 1
+UPDATE address_book SET name='Friends Address Book', type = 'Friends' WHERE id = 2
+UPDATE address_book SET name='Professional Address Book', type = 'Professional' WHERE id = 4
+UPDATE address_book SET name='Professional Address Book', type = 'Professional' WHERE id = 5
