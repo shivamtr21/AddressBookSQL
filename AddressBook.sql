@@ -25,10 +25,13 @@ INSERT INTO address_book VALUES('Aakanksha','Pandey','Sector-7','Bhilai','CG','4
 
 
 
-								UPDATE address_book SET address = '456 New Lucknow', zip = '67890', 
+UPDATE address_book SET address = '456 New Lucknow', zip = '67890', 
 phone_number = '5555678', email = 'divya612@gmail.com'
 WHERE first_name = 'Divya' AND last_name = 'Mishra'
 
 UPDATE address_book SET address = '456 New Bihar', zip = '78990', 
 phone_number = '987537', email = 'aakansha12@gmail.com'
 WHERE first_name = 'Aakanksha' AND last_name = 'Pandey';
+
+DELETE FROM address_book WHERE first_name = 'Shivam'
+
